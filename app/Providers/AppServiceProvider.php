@@ -32,7 +32,27 @@ class AppServiceProvider extends ServiceProvider
                 ['name' => 'Community', 'url' => '#'], 
             ];
 
-            $view->with('nav_items', $nav_items);
+            $footer_links = [
+                'Item1' => [
+                    'title' => 'THE BASICS',
+                    'links' => ['About Us', 'Contact Us', 'Forum',],
+                ],
+                'Item2' => [
+                    'title' => "GET INVOLVED",
+                    'links' => ["Contribution", "Add Movie", "Add Tv Show"],
+                ],
+                'Item3' => [
+                    'title' => "COMMUNITY",
+                    'links' => ["Guidelines", "Discussions", "Leaderboard"],
+                ],
+                'Item4' => [
+                    'title' => "LEGAL",
+                    'links' => ["Terms of Use", "Privacy Policy", "DMCA Policy"],
+                ],
+
+            ];
+
+            $view->with(compact('nav_items', 'footer_links'));
         });
     }
 }

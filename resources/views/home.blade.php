@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section>
+<section class="mt-5">
     <div class="container">
         <div class="row row-cols-5 d-flex gy-4">
             @foreach ($movies as $movies)
