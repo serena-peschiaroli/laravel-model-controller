@@ -14,8 +14,8 @@
           </li>
         @endforeach
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <form class="d-flex" action=" {{ route('movies.search')}}" method="GET" >
+        <input class="form-control me-2" type="search" placeholder="Cerca film" aria-label="Search" name="search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
