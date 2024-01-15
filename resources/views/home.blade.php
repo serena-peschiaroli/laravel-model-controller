@@ -10,9 +10,9 @@
                     <div class="card">
                         <img src= "{{ $movies->image}}" class="card-img-top" alt="Movie image">
                         <div class="card-body">
-                            <h5 class="card-title"> {{ $movies->original_title}} </h5>
-                            <p class="card-text"> Nationality: {{$movies->nationality }}</p>
-                            <p class="card-text"> Release: {{$movies->date }}</p>
+                            <h5 class="card-title"> {{ $movies->title}} </h5>
+                            <p class="card-text"> Titolo originale: {{ $movies->original_title}}</p>
+                            <p class="card-text"> Data: {{$movies->date }}</p>
                         </div>
                     </div>
                 </div>
