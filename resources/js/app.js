@@ -3,7 +3,7 @@ import './bootstrap';
 //per processare img:
 import '~resources/scss/app.scss';
 import.meta.glob([
-    '..img/**'
+    '../img/**'
 ])
 
 //per parte js di bootstrap
